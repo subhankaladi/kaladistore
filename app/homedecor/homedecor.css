@@ -1,0 +1,102 @@
+/* Basic styling */
+.home-decor {
+    padding: 20px;
+    text-align: center;
+
+
+     
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: violet;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  }
+ 
+  
+  /* Product grid styling */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-item {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .product-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Makes the container square */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .product-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
+  /* Style for the Buy Now button */
+.buy-now-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #45a049;
+}

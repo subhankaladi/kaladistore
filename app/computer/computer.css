@@ -1,0 +1,100 @@
+/* Main container */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual product card */
+  .product-card {
+    flex: 1 1 30%;
+    max-width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer; /* Show pointer on hover */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    opacity: 0; /* Start with opacity 0 for fade-in effect */
+    animation: fadeIn 1.5s forwards; /* Trigger fade-in animation */
+    border: 0.5px solid rgba(95, 95, 95, 0.592);
+  }
+  
+  /* Image inside the product card */
+  .product-card img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Product title */
+  .product-card h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  /* Product price */
+  .product-card p {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Hover effect: move up slightly and shadow */
+  .product-card:hover {
+    transform: translateY(-10px); /* Move up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .product-card {
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .computer-heading{
+    h2{
+      background-color: violet;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+  }
+
+  .buy-now-btn {
+    background-color: #4CAF50; 
+    color: white;              
+    padding: 10px 20px;      
+    text-align: center;        
+    text-decoration: none;     
+    display: inline-block;     
+    font-size: 16px;           
+    cursor: pointer;          
+    border-radius: 5px;        
+    border: none;              
+    transition: background-color 0.3s; 
+  }
+  
+  .buy-now-btn:hover {
+    background-color: #45a049; 
+  }
+  
